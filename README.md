@@ -1,3 +1,7 @@
 # nba-causal
 
 GitHub repository for "The causal effect of a timeout at stopping an opposing run in the NBA" by Connor Gibbs of Colorado State University, Dr. Ryan Elmore of the University of Denver, and Dr. Bailey Fosdick of Colorado State University.
+
+To reproduce the matched pairs for each run duration, you will need to add the files and directories in the `data` folder located [here](https://drive.google.com/drive/folders/1Ibc6b7MuqCHE0KwpGCE6yqr3_RblO8XQ?usp=sharing) to your project's `data` folder. These files were too large to upload to Github. If you plan to use supercomputing resources (recommended) and plan to leverage the batch scripts provided in the `r` folder, you will need to update your project with the `msgs` subdirectory located [here](https://drive.google.com/drive/folders/1Ibc6b7MuqCHE0KwpGCE6yqr3_RblO8XQ?usp=sharing).
+
+After you have updated the `data` folder and created the `msgs` folder, you are ready to recreate the analysis. If you plan to use supercomputing resources, you can use the `r/sensitivity2defns.sh` batch script as a template. This script runs `r/sensitivity2defns.R` as an array job where each job corresponds to the analysis for one of the sixteen run definitions. The logic of preparing the data, definining runs, applying the criteria, and conducting the matching procedure is provided in `r/driver.R`. Any in house functions are stored in the `fns` folder. Two files are used to reconstruct the forest plot in the supplement: `matching_forest.R` and `matching_forest.sh`.
