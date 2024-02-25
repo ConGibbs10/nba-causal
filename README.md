@@ -1,6 +1,6 @@
 # nba-causal
 
-GitHub repository for "The causal effect of a timeout at stopping an opposing run in the NBA" by Connor Gibbs of Colorado State University, Dr. Ryan Elmore of the University of Denver, and Dr. Bailey Fosdick of Colorado State University.
+GitHub repository for "The causal effect of a timeout at stopping an opposing run in the NBA" by Dr. Connor Gibbs of Colorado State University, Dr. Ryan Elmore of the University of Denver, and Dr. Bailey Fosdick of Colorado State University.
 
 To reproduce the matched pairs for each run duration, you will need to add the files and directories in the `data` folder located [here](https://drive.google.com/drive/folders/1Ibc6b7MuqCHE0KwpGCE6yqr3_RblO8XQ?usp=sharing) to your project's `data` folder. These files were too large to upload to Github. If you plan to use supercomputing resources (recommended) and plan to leverage the batch scripts provided in the `r` folder, you will need to update your project with the `msgs` subdirectory located [here](https://drive.google.com/drive/folders/1Ibc6b7MuqCHE0KwpGCE6yqr3_RblO8XQ?usp=sharing).
 
